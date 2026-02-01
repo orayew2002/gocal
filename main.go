@@ -19,7 +19,9 @@ func main() {
 		"(2+3)^(1+1)",
 		"-(3+4)*2",
 		"2^-3",
+		"1200%10",
 	}
+
 	for _, s := range tests {
 		v, err := math.EvalExpression(s)
 		if err != nil {

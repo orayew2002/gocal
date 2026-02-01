@@ -472,7 +472,7 @@ func evalRPN(rpn []Token) (float64, error) {
 				case "/":
 					res = a / b
 				case "%":
-					res = math.Mod(a, b)
+					res = a * b / 100
 				case "^":
 					res = math.Pow(a, b)
 				}
